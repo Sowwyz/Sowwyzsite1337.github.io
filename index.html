@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sowwyz</title>
+    <link rel="icon" href="pfp.png">
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Sowwyz">
+    <meta property="og:image" content="https://dkeree.repl.co/pfp.png">
+    <meta property="og:description" content="Sowwyz#1337">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        console.log('%cWelcome To My Website!', 'color: #72bcd4; font-size: 40px');
+        console.log('%cFeel free to look around...', 'color: #72bcd4; font-size: 30px');</script>
+</head>
+
+<body>
+    <iframe id="background" src=""></iframe>
+    <div id="container">
+        <div id="header-wrapper">
+            <h1 id="header">
+                <img class="shakkube" src="/imgs/shakkube.gif">
+                Sowwyz
+                <img class="shakkube" src="/imgs/shakkube.gif">
+            </h1>
+        </div>
+        <div id="info-container">
+            <div id="banner"></div>
+            <div id="father-socials-container">
+                <div id="socials-container">
+                    <div class="socials-widget left-widget">
+                        <img class="socials-image" src="/imgs/youtube-icon.png">
+                    </div>
+                    <div class="socials-widget middle-widget">
+                        <img class="socials-image" src="/imgs/instagram-icon.png">
+                    </div>
+                    <div class="socials-widget middle-widget">
+                        <img class="socials-image" src="/imgs/github-icon.png">
+                    </div>
+                </div>
+                <div id="addons">
+                    <div id="special" class="socials-widget left-widget"></div>
+                    <div class="socials-widget right-widget">
+                        <img class="socials-image rounded-widget" src="/imgs/walmar.jpg">
+                    </div>
+                </div>
+            </div>
+            <h1 class="section-header">About Me</h1>
+            <div id="pfp-wrapper">
+                <img id="discord-pfp" src="/imgs/pfp.png">
+                <div id="presence"></div>
+            </div>
+            <div id="info-wrapper">
+                <h2 id="status">Loading...</h2>
+                <h2 class="info">Discord: Sowwyz#1337</h2>
+                <p class="info">
+                    RXZldCBoYWtrxLFtZGEgaGnDpyBiaXIgxZ9leSDDtsSfcmVuZW1lenNpbml6IApodHRwczovL2Rpc2NvcmQuZ2cvdHdpdGNoZm9sbG93ZXI=
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <h2 class="section-header">#####</h2>
+        <div class="inner-wrapper">
+            <div class="button-wrapper">
+                <a class="button-href" href="https://discord.gg/twitchfollower">1337</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        const container = document.getElementById("container");
+        const socialWidgets = document.getElementsByClassName("socials-widget");
+        const pfp = document.getElementById("discord-pfp");
+        var clicks = 0;
+        const links = ["https://www.youtube.com/@sowwyz1337", "https://www.instagram.com/sowwyz1337/", "https://github.com/Sowwyz", "https://www.youtube.com/watch?v=dQw4w9WgXcQ/", "https://discord.gg/twitchfollower"];
+
+        for (var i = 0; i < socialWidgets.length; i++) {
+            const link = links[i];
+            socialWidgets[i].addEventListener("click", () => {
+                window.open(link, "_blank");
+            });
+        }
+
+        pfp.addEventListener("click", () => {
+            if (clicks < 1) {
+                clicks++;
+            } else {
+                window.open("https://discord.gg/twitchfollower", "_blank");
+                clicks = 0;
+            }
+        });
+
+        window.onresize = function () {
+            container.width = window.innerWidth;
+            container.height = window.innerHeight;
+        }
+
+       
+</html>-

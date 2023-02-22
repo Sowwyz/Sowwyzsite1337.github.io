@@ -1,0 +1,315 @@
+﻿﻿body {
+    background-color: #000000;
+    text-align: center;
+    pointer-events: none;
+}
+
+#special {
+    border: 0px solid transparent;
+    width: 34px;
+    height: 34px;
+}
+
+.shakkube {
+    width: 3vw;
+    height: 3vw;
+}
+
+#background {
+    pointer-events: auto;
+    position: fixed;
+    width: 100000%;
+    height: 100*%;
+    border: transparent;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#banner {
+    position: absolute;
+    background-image: url("banner.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px 8px 0 0;
+    margin: -30px;
+    width: 100%;
+    height: 400px;
+}
+
+#container {
+    pointer-events: none;
+    width: 80%;
+    margin: auto;
+    z-index: 0;
+}
+
+#header-wrapper {
+    border-radius: 8px;
+    background-color: #23272A;
+    width: 50%;
+    margin: auto;
+}
+
+#header {
+    font-family: monospace;
+    font-size: 5vw;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 200%;
+}
+
+#father-socials-container {
+    position: relative;
+}
+
+#socials-container {
+    position: absolute;
+}
+
+#addons {
+    position: absolute;
+    right: 0;
+}
+
+.rounded-widget {
+    border-radius: 100%;
+}
+
+.left-widget {
+    float: left;
+    margin-right: 3px;
+}
+
+.middle-widget {
+    float: left;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.right-widget {
+    float: left;
+    margin-left: 3px;
+}
+
+.socials-widget {
+    border-radius: 8px;
+    border: 2px solid #050505;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    -webkit-transition: background-color 0.25s ease-out;
+    -moz-transition: background-color 0.25s ease-out;
+    -o-transition: background-color 0.25s ease-out;
+    transition: background-color 0.25s ease-out;
+    background-color: rgba(192, 192, 192, 0.2);
+}
+
+    .socials-widget:hover {
+        background-color: rgba(192, 192, 192, 0.5);
+    }
+
+.sus {
+    color: black;
+    text-decoration: none;
+    -webkit-transition: color 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out;
+    -o-transition: color 0.25s ease-out;
+    transition: color 0.25s ease-out;
+}
+
+    .sus:hover {
+        color: #5865F2;
+        box-shadow: 0 5px 20px color: #7289DA inset 0 0 20px #7289DA;
+    }
+
+
+.socials-image {
+    outline: none;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    width: 30px;
+    height: 30px;
+}
+
+#info-container {
+    border-radius: 8px;
+    background-color: #23272A;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+    word-wrap: break-word;
+    position: relative;
+    pointer-events: auto;
+}
+
+.section {
+    width: 75%;
+    text-align: center;
+    pointer-events: none;
+}
+
+.section-header {
+    font-family: monospace;
+    color: #000000;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+#pfp-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#discord-pfp {
+    border-radius: 50%;
+    -webkit-transition: box-shadow 0.25s ease-out;
+    -moz-transition: box-shadow 0.25s ease-out;
+    -o-transition: box-shadow 0.25s ease-out;
+    transition: box-shadow 0.25s ease-out;
+    box-shadow: 0px 0px 10px 2px #36393E;
+}
+
+    #discord-pfp:hover {
+        box-shadow: 0px 0px 10px 5px #36393E;
+    }
+
+#offline-hole {
+    border-radius: 50%;
+    background-color: #000000;
+    margin: auto;
+    margin-top: 25%;
+    width: 13px;
+    height: 13px;
+}
+
+#idle-cresent {
+    border-radius: 50%;
+    background-color: #23272A;
+    margin-left: 0.3px;
+    margin-top: 1.8px;
+    height: 16px;
+    width: 16px;
+}
+
+#dnd-bar {
+    border-radius: 10px;
+    height: 5px;
+    width: 15px;
+    background-color: black;
+    margin: auto;
+    margin-top: 40%;
+}
+
+#presence {
+    background-color: #99AAB5;
+    border-radius: 50%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 0 0 3px 7px #23272A;
+}
+
+#presence-sticker {
+    display: none;
+    width: 100% height: 100%;
+    border-radius: 50%;
+}
+
+#status {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-style: italic;
+}
+
+.info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.inner-wrapper {
+    height: 350px;
+    overflow: auto;
+}
+
+.button-wrapper {
+    margin: 50px;
+}
+
+.button-href {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: #000000;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-transition: background-color 0.25s ease-out;
+    -moz-transition: background-color 0.25s ease-out;
+    -o-transition: background-color 0.25s ease-out;
+    transition: background-color 0.25s ease-out;
+}
+
+    .button-href:hover {
+        background-color: #5865F2;
+        box-shadow: 0 5px 20px color: #7289DA inset 0 0 20px #7289DA;
+    }
+
+.wrapper {
+    border-radius: 8px;
+    background-color: #23272A;
+    width: 40%;
+    padding: 15px;
+    margin: 15px;
+    word-wrap: break-word;
+    pointer-events: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.shoutout {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: left;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background: #2C2F33;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #555;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
